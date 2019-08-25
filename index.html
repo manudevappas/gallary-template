@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallary display </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:400,600,700%7CLato:400,700' type='text/css' media='all'> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css\libs\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css\libs\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css\libs\justifiedGallery.min.css">
+    <link rel="stylesheet" type="text/css" href="css\libs\magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/red.png" type="image/x-icon" />
+    <!-- upload -->
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body class="home">
+
+    <header class="header-basic-light">
+        <div class="header-limiter">
+            <h1><a href="index">Talavadi<span>logo</span></a></h1>
+            <nav>
+                <a href="index">Home</a>
+                <a href="C:/Users/adadmin/Downloads/project%20file/news%20feed/index.html">News Feed</a>
+                <a href="#">Gallary</a>
+                <a href="login">login/Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-md-offset-3">
+            <div class="projects">
+
+                <div class="project-item">
+ <!-- upload and display image -->
+<!-- https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript -->
+
+
+ 
+<!-- cooment box -->
+ 
+  <form action="/index.html">  
+     <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+         <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+
+    
+    <label for="file" style="cursor: pointer;">Select Image</label>
+    <input type="submit" value="Upload">
+    
+
+    <img id="output" width="600" />
+
+    <script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>     
+  </form>
+ 
+<style>
+ 
+
+input[type=text], select, textarea {
+  width: 595px;
+
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+    
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
+</style>
+
+
+
+ 
+                </div> 
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                        <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <!-- <a href="single-project.html"> -->
+                    <img src="images\projects\1.jpg" alt="">
+                    <!-- 		</a>
+                     <h2 class="title">
+                     	<a href="#">Emotions</a>
+                     </h2> -->
+
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline: none !important;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;   outline:0;
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;   outline:0;
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\2.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;   outline:0;
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;   outline:0;
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+
+                    </div>
+               
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\3.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\4.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\5.jpg" alt="">
+                   <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\6.jpg" alt="">
+                   <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\7.jpg" alt="">
+                   <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\8.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\10.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+                    <img src="images\projects\11.jpg" alt="">
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="#">
+                        <div class="profile_img"><img src="css/download.jpg" alt="" align="middle"></div>
+
+                        <div class="profile">
+                            <h4 align="left">Elon_Musk</h4></a>
+                    </div>
+
+                    <video width="598" controls>
+                        <source src="css/videos/mov_bbb.mp4" type="video/mp4" align="middle">
+                        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <div class="button">
+                        <button type="button" style="background-color: white; background: 20px; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px; outline:0;  ">  Like  </h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Comment</h1>
+                        </button>
+                        <button type="button" style="background-color: white; background: none; border: none; outline:none !important;">
+                            <h1 style="font-family: Courier New; font-size: 20px;  
+">
+                        Share</h1>
+                        </button>
+
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js\libs\jquery-1.12.4.min.js"></script>
+    <script src="js\libs\jquery.justifiedGallery.min.js"></script>
+    <script src="js\libs\jquery.magnific-popup.js"></script>
+    <script src="js\scripts.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>
